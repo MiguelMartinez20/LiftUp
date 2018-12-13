@@ -25,7 +25,7 @@ SECRET_KEY = 'r854e*m$nzmh_h6vfl=i=shxr6fvmcw3(d_g!*j*^boqgf1cxg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['liftup.pythonanywhere.com']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mantencion', 
+    'mantencion',
     'rest_framework',
     'corsheaders',
 ]
@@ -123,5 +123,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_WHITELIST = 'http://127.0.0.1:8000/'
+CORS_ORIGIN_WHITELIST = 'https://miguelmartinez20.github.io'
 
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
